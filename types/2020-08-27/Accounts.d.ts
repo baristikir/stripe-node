@@ -1870,12 +1870,12 @@ declare module 'stripe' {
         last_name?: string;
 
         /**
-         * The Kana varation of the individual's last name (Japan only).
+         * The Kana variation of the individual's last name (Japan only).
          */
         last_name_kana?: string;
 
         /**
-         * The Kanji varation of the individual's last name (Japan only).
+         * The Kanji variation of the individual's last name (Japan only).
          */
         last_name_kanji?: string;
 
@@ -2960,12 +2960,12 @@ declare module 'stripe' {
         last_name?: string;
 
         /**
-         * The Kana varation of the individual's last name (Japan only).
+         * The Kana variation of the individual's last name (Japan only).
          */
         last_name_kana?: string;
 
         /**
-         * The Kanji varation of the individual's last name (Japan only).
+         * The Kanji variation of the individual's last name (Japan only).
          */
         last_name_kanji?: string;
 

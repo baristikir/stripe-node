@@ -116,6 +116,7 @@
 ///<reference path='./Transfers.d.ts' />
 ///<reference path='./Treasury/CreditReversals.d.ts' />
 ///<reference path='./Treasury/DebitReversals.d.ts' />
+///<reference path='./Treasury/FinancialAccountFeatures.d.ts' />
 ///<reference path='./Treasury/FinancialAccounts.d.ts' />
 ///<reference path='./Treasury/InboundTransfers.d.ts' />
 ///<reference path='./Treasury/OutboundPayments.d.ts' />

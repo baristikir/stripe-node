@@ -1614,7 +1614,7 @@ declare module 'stripe' {
       payment_method_options?: PaymentIntentCreateParams.PaymentMethodOptions;
 
       /**
-       * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use. If this is not provided, defaults to ["card"].
+       * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use. If this is not provided, defaults to ["card"]. Use automatic_payment_methods to manage payment methods from the [Stripe Dashboard](https://dashboard.stripe.com/settings/payment_methods).
        */
       payment_method_types?: Array<string>;
 
@@ -3218,7 +3218,7 @@ declare module 'stripe' {
       payment_method_options?: PaymentIntentUpdateParams.PaymentMethodOptions;
 
       /**
-       * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use.
+       * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use. Use automatic_payment_methods to manage payment methods from the [Stripe Dashboard](https://dashboard.stripe.com/settings/payment_methods).
        */
       payment_method_types?: Array<string>;
 

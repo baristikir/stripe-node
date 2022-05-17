@@ -802,7 +802,10 @@ describe('Mandate', function() {
 
 describe('SetupAttempt', function() {
   it('list method', async function() {
-    const setupAttempts = await stripe.setupAttempts.list({limit: 3});
+    const setupAttempts = await stripe.setupAttempts.list({
+      limit: 3,
+      setup_intent: 'si_xyz',
+    });
     expect(setupAttempts).not.to.be.null;
   });
 });
@@ -2362,17 +2365,17 @@ describe('Treasury.FinancialAccount', function() {
   });
 
   it('updateFeatures method', async function() {
-    const features = await stripe.treasury.financialAccounts.updateFeatures(
+    const financialAccountFeatures = await stripe.treasury.financialAccounts.updateFeatures(
       'fa_xxxxxxxxxxxxx'
     );
-    expect(features).not.to.be.null;
+    expect(financialAccountFeatures).not.to.be.null;
   });
 
   it('retrieveFeatures method', async function() {
-    const features = await stripe.treasury.financialAccounts.retrieveFeatures(
+    const financialAccountFeatures = await stripe.treasury.financialAccounts.retrieveFeatures(
       'fa_xxxxxxxxxxxxx'
     );
-    expect(features).not.to.be.null;
+    expect(financialAccountFeatures).not.to.be.null;
   });
 });
 

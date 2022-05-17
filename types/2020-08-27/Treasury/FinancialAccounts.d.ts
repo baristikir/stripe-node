@@ -41,7 +41,7 @@ declare module 'stripe' {
          * Encodes whether a FinancialAccount has access to a particular Feature, with a `status` enum and associated `status_details`.
          * Stripe or the platform can control Features via the requested field.
          */
-        features?: Stripe.Features;
+        features?: Stripe.Treasury.FinancialAccountFeatures;
 
         /**
          * The set of credentials that resolve to a FinancialAccount.
@@ -809,11 +809,11 @@ declare module 'stripe' {
           id: string,
           params?: FinancialAccountRetrieveFeaturesParams,
           options?: RequestOptions
-        ): Promise<Stripe.Response<Stripe.Features>>;
+        ): Promise<Stripe.Response<Stripe.Treasury.FinancialAccountFeatures>>;
         retrieveFeatures(
           id: string,
           options?: RequestOptions
-        ): Promise<Stripe.Response<Stripe.Features>>;
+        ): Promise<Stripe.Response<Stripe.Treasury.FinancialAccountFeatures>>;
 
         /**
          * Updates the Features associated with a FinancialAccount.
@@ -822,11 +822,11 @@ declare module 'stripe' {
           id: string,
           params?: FinancialAccountUpdateFeaturesParams,
           options?: RequestOptions
-        ): Promise<Stripe.Response<Stripe.Features>>;
+        ): Promise<Stripe.Response<Stripe.Treasury.FinancialAccountFeatures>>;
         updateFeatures(
           id: string,
           options?: RequestOptions
-        ): Promise<Stripe.Response<Stripe.Features>>;
+        ): Promise<Stripe.Response<Stripe.Treasury.FinancialAccountFeatures>>;
       }
     }
   }

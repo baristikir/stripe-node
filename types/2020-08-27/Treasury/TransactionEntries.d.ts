@@ -163,6 +163,7 @@ declare module 'stripe' {
           | 'credit_reversal'
           | 'debit_reversal'
           | 'inbound_transfer'
+          | 'issuing_authorization'
           | 'other'
           | 'outbound_payment'
           | 'outbound_transfer'
@@ -175,6 +176,8 @@ declare module 'stripe' {
           | 'debit_reversal'
           | 'inbound_transfer'
           | 'inbound_transfer_return'
+          | 'issuing_authorization_hold'
+          | 'issuing_authorization_release'
           | 'other'
           | 'outbound_payment'
           | 'outbound_payment_cancellation'
@@ -187,9 +190,7 @@ declare module 'stripe' {
           | 'outbound_transfer_posting'
           | 'outbound_transfer_return'
           | 'received_credit'
-          | 'received_debit'
-          | 'received_hold'
-          | 'received_hold_release';
+          | 'received_debit';
       }
 
       interface TransactionEntryRetrieveParams {

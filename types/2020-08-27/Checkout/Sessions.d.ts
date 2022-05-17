@@ -1118,6 +1118,8 @@ declare module 'stripe' {
         /**
          * A list of the types of payment methods (e.g., `card`) this Checkout Session can accept.
          *
+         * Do not include this attribute if you prefer to manage your payment methods from the [Stripe Dashboard](https://dashboard.stripe.com/settings/payment_methods).
+         *
          * Read more about the supported payment methods and their requirements in our [payment
          * method details guide](https://stripe.com/docs/payments/checkout/payment-methods).
          *
